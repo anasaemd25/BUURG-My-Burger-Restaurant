@@ -105,7 +105,7 @@
             padding-left:1rem; 
         }
 
-        .side-card{
+        .item-card{
             background-color: #FFB703 ;
             height: 8rem;
             border-radius: 12px;
@@ -115,15 +115,16 @@
             position: relative; 
         }
 
-        .side-img{
+        .item-img{
             border-radius: 12px;
             height: 100%;
+            width: 10rem;
         }
 
-        .side-text {
+        .item-text {
             position: absolute;
             top: 0.5rem;
-            left: 10rem;
+            left: 12rem;
             font-weight: bolder;
             font-size: clamp(1.5rem, 3vw, 1.5rem);
             color: #111111;
@@ -137,10 +138,10 @@
             overflow-wrap: break-word; 
         }
         
-        .side-price{
+        .item-price{
             position: absolute;
             top: 4.3rem;      
-            left: 10rem;     
+            left: 12rem;     
             font-weight: bolder;
             font-size: clamp(1.5rem, 4vw, 2rem);
             color: #111111 ;
@@ -163,13 +164,14 @@
             z-index: 2;
             pointer-events: auto;
         }
+
         .cart-btn2 img {
             width: 34px;
             height: 34px;
             padding: 0;
         }
 
-        .side-link {
+        .item-link {
             display: block;
             height: 100%;
             width: 100%;
@@ -177,6 +179,70 @@
             color: inherit;
             position: relative;
             z-index: 1;
+        }
+
+        .quantity {
+            position: absolute;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            color: #EF476F;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0;
+            z-index: 2;
+        }
+
+        .price {
+            font-size: clamp(2rem, 4vw, 2rem);
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-right: 0.5rem;
+        }
+
+        .restaurant-wrapper {
+            margin-top: 2rem;
+            padding: 0 0.5rem;
+        }
+
+        .restaurant-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #111111;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        #restaurant-select {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 2px solid #FFB703;
+            box-sizing: border-box;
+        }
+
+        .confirm-order-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .confirm-order-btn {
+            background-color: #FFB703;
+            border: none;
+            border-radius: 12px;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #111111;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .confirm-order-btn:hover {
+            background-color: #EF476F;
         }
 
     </style>
@@ -187,7 +253,7 @@
     <div class="header">
 
     <div class="header-left">
-        <a href="burgers.html" class="back-btn" aria-label="Back to menu">
+        <a href="desserts.html" class="back-btn" aria-label="Back to menu">
         <img src="https://img.icons8.com/?size=100&id=MqVUKnfYkSpO&format=png&color=000000" alt="Back">
         </a>
 
@@ -211,49 +277,60 @@
 
     </div>
 
+    <div class="item-card">
+        <a href="burger-nutrition.html" class="item-link" style="display:block; height:100%;">
+            <p class="item-text">Olimpo</p>
+            <p class="item-price">39,99€</p>
+            <img src="imgs/Burgers/olimpo-burguer.jpg" class="item-img" alt="Olimpo Burger">
+        </a>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Fries</p>
-            <p class="side-price">3,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
-        </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
+        <p class="quantity">x1</p>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Onion Rings</p>
-            <p class="side-price">9,99€</p>
-            <img src="imgs/Sides/onion-rings.jpg" class="side-img" alt="onion-rings">
+    <div class="item-card">
+        <a href="sides-nutrition.html" class="item-link" style="display:block; height:100%;">
+            <p class="item-text">Onion Rings</p>
+            <p class="item-price">9,99€</p>
+            <img src="imgs/Sides/onion-rings.jpg" class="item-img" alt="Onion Rings">
         </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
+
+        <p class="quantity">x1</p>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Poke Bowl</p>
-            <p class="side-price">19,99€</p>
-            <img src="imgs/Sides/poke-bowl.jpg" class="side-img" alt="poke">
+    <div class="item-card">
+        <a href="drinks-nutrition.html" class="item-link" style="display:block; height:100%;">
+            <p class="item-text">Pinky Shake</p>
+            <p class="item-price">14,99€</p>
+            <img src="imgs/Drinks/strawberry-shake.jpg" class="item-img" alt="Strawberry Shake">
         </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
+
+        <p class="quantity">x1</p>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Salad</p>
-            <p class="side-price">16,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
+    <div class="item-card">
+        <a href="desserts-nutrition.html" class="item-link" style="display:block; height:100%;">
+            <p class="item-text">Brownie</p>
+            <p class="item-price">12,99€</p>
+            <img src="imgs/Desserts/brownie.jpg" class="item-img" alt="Chocolate Brownie">
         </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
+
+        <p class="quantity">x1</p>
+    </div>
+
+    <h1 class="price">Total: 76,96€</h1>
+
+    <div class="restaurant-wrapper">
+        <label for="restaurant-select" class="restaurant-label">Choose a Restaurant:</label>
+        <select id="restaurant-select">
+            <option value="">-- Select --</option>
+            <option value="ideapark">IDEAPARK</option>
+            <option value="valkea">VALKEA</option>
+            <option value="zeppelin">ZEPPELIN</option>
+        </select>
+    </div>
+
+    <div class="confirm-order-wrapper">
+        <button class="confirm-order-btn">Confirm order</button>
     </div>
 
 </body>

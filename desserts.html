@@ -37,6 +37,7 @@
             gap:0.5rem; 
         }
 
+
         .back-btn{
             display:inline-flex;
             align-items:center;
@@ -105,7 +106,7 @@
             padding-left:1rem; 
         }
 
-        .side-card{
+        .drinks-card{
             background-color: #FFB703 ;
             height: 8rem;
             border-radius: 12px;
@@ -115,15 +116,15 @@
             position: relative; 
         }
 
-        .side-img{
+        .drinks-img{
             border-radius: 12px;
             height: 100%;
         }
 
-        .side-text {
+        .drinks-text {
             position: absolute;
             top: 0.5rem;
-            left: 10rem;
+            left: 12rem;
             font-weight: bolder;
             font-size: clamp(1.5rem, 3vw, 1.5rem);
             color: #111111;
@@ -137,10 +138,10 @@
             overflow-wrap: break-word; 
         }
         
-        .side-price{
+        .drinks-price{
             position: absolute;
             top: 4.3rem;      
-            left: 10rem;     
+            left: 12rem;     
             font-weight: bolder;
             font-size: clamp(1.5rem, 4vw, 2rem);
             color: #111111 ;
@@ -161,7 +162,7 @@
             justify-content: center;
             background-color: #FFFFFF;
             z-index: 2;
-            pointer-events: auto;
+            pointer-events: auto; /* El carrito sí recibe clics */
         }
         .cart-btn2 img {
             width: 34px;
@@ -169,7 +170,7 @@
             padding: 0;
         }
 
-        .side-link {
+        .drinks-link {
             display: block;
             height: 100%;
             width: 100%;
@@ -187,7 +188,7 @@
     <div class="header">
 
     <div class="header-left">
-        <a href="burgers.html" class="back-btn" aria-label="Back to menu">
+        <a href="drinks.html" class="back-btn" aria-label="Back to menu">
         <img src="https://img.icons8.com/?size=100&id=MqVUKnfYkSpO&format=png&color=000000" alt="Back">
         </a>
 
@@ -212,49 +213,64 @@
     </div>
 
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Fries</p>
-            <p class="side-price">3,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
+    <div class="drinks-card">
+        <a href="desserts-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Crepes</p>
+            <p class="drinks-price">12,99€</p>
+            <img src="imgs/Desserts/crepes.jpg" class="drinks-img" alt="drink">
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
         </a>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Onion Rings</p>
-            <p class="side-price">9,99€</p>
-            <img src="imgs/Sides/onion-rings.jpg" class="side-img" alt="onion-rings">
+    <div class="drinks-card">
+        <a href="desserts-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Cherry Cake</p>
+            <p class="drinks-price">13,99€</p>
+            <img src="imgs/Desserts/Cake.jpg" class="drinks-img" alt="drink">
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
         </a>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Poke Bowl</p>
-            <p class="side-price">19,99€</p>
-            <img src="imgs/Sides/poke-bowl.jpg" class="side-img" alt="poke">
+
+    <div class="drinks-card">
+        <a href="desserts-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Choko Muffin</p>
+            <p class="drinks-price">8,99€</p>
+            <img src="imgs/Desserts/muffin.jpg" class="drinks-img" alt="drink">
+        </a>
+        <div class="cart-btn2" aria-label="cart">
+            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
+        </div>
+    </div>
+
+
+    <div class="drinks-card">
+        <a href="desserts-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Ice Cream</p>
+            <p class="drinks-price">9,99€</p>
+            <img src="imgs/Desserts/icre-cream.jpg" class="drinks-img" alt="drink">
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
         </a>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Salad</p>
-            <p class="side-price">16,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
+
+    <div class="drinks-card">
+        <a href="desserts-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Brownie</p>
+            <p class="drinks-price">11,99€</p>
+            <img src="imgs/Desserts/brownie.jpg" class="drinks-img" alt="drink">
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
         </a>
     </div>
+    
 
 </body>
 </html>

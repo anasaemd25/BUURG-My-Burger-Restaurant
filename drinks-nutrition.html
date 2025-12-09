@@ -37,6 +37,7 @@
             gap:0.5rem; 
         }
 
+
         .back-btn{
             display:inline-flex;
             align-items:center;
@@ -105,9 +106,10 @@
             padding-left:1rem; 
         }
 
-        .side-card{
+        
+        .drinks-card{
             background-color: #FFB703 ;
-            height: 8rem;
+            height: 35rem; 
             border-radius: 12px;
             margin-top: 1rem;
             padding: 0.5rem;
@@ -115,15 +117,16 @@
             position: relative; 
         }
 
-        .side-img{
+        .drinks-img{
             border-radius: 12px;
-            height: 100%;
+            height: 20%;
+            position: absolute;
         }
 
-        .side-text {
+        .drinks-text {
             position: absolute;
             top: 0.5rem;
-            left: 10rem;
+            left: 12rem;
             font-weight: bolder;
             font-size: clamp(1.5rem, 3vw, 1.5rem);
             color: #111111;
@@ -137,10 +140,10 @@
             overflow-wrap: break-word; 
         }
         
-        .side-price{
+        .drinks-price{
             position: absolute;
             top: 4.3rem;      
-            left: 10rem;     
+            left: 12rem;     
             font-weight: bolder;
             font-size: clamp(1.5rem, 4vw, 2rem);
             color: #111111 ;
@@ -161,7 +164,7 @@
             justify-content: center;
             background-color: #FFFFFF;
             z-index: 2;
-            pointer-events: auto;
+            pointer-events: auto; 
         }
         .cart-btn2 img {
             width: 34px;
@@ -169,7 +172,7 @@
             padding: 0;
         }
 
-        .side-link {
+        .drinks-link {
             display: block;
             height: 100%;
             width: 100%;
@@ -179,6 +182,29 @@
             z-index: 1;
         }
 
+        .drinks-description {
+            position: absolute;
+            top: 8rem;
+            font-weight: 400;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #111111;
+            text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+            text-align: left;     
+            color: #111111;
+            font-size: 1rem;
+        }
+        
+        .buurg-logo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .buurg-logo-footer img {
+            width: 200px;
+            height: auto;
+        }
     </style>
 
 </head>
@@ -187,7 +213,7 @@
     <div class="header">
 
     <div class="header-left">
-        <a href="burgers.html" class="back-btn" aria-label="Back to menu">
+        <a href="drinks.html" class="back-btn" aria-label="Back to menu">
         <img src="https://img.icons8.com/?size=100&id=MqVUKnfYkSpO&format=png&color=000000" alt="Back">
         </a>
 
@@ -212,49 +238,43 @@
     </div>
 
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Fries</p>
-            <p class="side-price">3,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
+    <div class="drinks-card">
+        <a href="drinks-nutrition.html" class="drinks-link" style="display:block; height:100%;">
+            <p class="drinks-text">Pinky Shake</p>
+            <p class="drinks-price">14,99€</p>
+            <img src="imgs/Drinks/strawberry-shake.jpg" class="drinks-img" alt="Strawberry Milkshake">
+            <div class="drinks-description">
+                <p>
+                    <b>Strawberry Milkshake</b>
+                    <br>Made with vanilla ice cream, fresh strawberries, milk, and whipped cream
+                    <br>
+                    <br>
+                    <b>Nutritional Information — Serving Size: 1 Medium (250ml)</b>
+                    <br>Calories: 450 kcal (23% DV)
+                    <br>Total Fat: 22g (34% DV)
+                    <br>Saturated Fat: 14g (70% DV)
+                    <br>Trans Fat: 0g
+                    <br>Cholesterol: 70mg (23% DV)
+                    <br>Sodium: 150mg (6% DV)
+                    <br>Total Carbohydrate: 60g (20% DV)
+                    <br>Dietary Fiber: 2g (8% DV)
+                    <br>Sugars: 52g
+                    <br>Protein: 8g (16% DV)
+                    <br>Vitamin A: 15% DV
+                    <br>Vitamin C: 10% DV
+                    <br>Calcium: 30% DV
+                    <br>Iron: 4% DV                
+                </p>
+            </div>
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
         </a>
     </div>
 
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Onion Rings</p>
-            <p class="side-price">9,99€</p>
-            <img src="imgs/Sides/onion-rings.jpg" class="side-img" alt="onion-rings">
-        </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
-    </div>
-
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Poke Bowl</p>
-            <p class="side-price">19,99€</p>
-            <img src="imgs/Sides/poke-bowl.jpg" class="side-img" alt="poke">
-        </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
-    </div>
-
-    <div class="side-card">
-        <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
-            <p class="side-text">Salad</p>
-            <p class="side-price">16,99€</p>
-            <img src="imgs/Sides/fries.jpg" class="side-img" alt="fries">
-        </a>
-        <a href="cart.html" class="cart-btn2" aria-label="cart">
-            <img src="https://img.icons8.com/?size=100&id=y2uWMIRZ5lJm&format=png&color=000000" alt="cart">
-        </a>
-    </div>
+    <a href="index.html" class="buurg-logo-footer">
+        <img src="/imgs/Logos/buurg-logo.png" alt="">
+    </a>
 
 </body>
 </html>
