@@ -1,3 +1,9 @@
+<!--
+  BUURG - Shopping Cart Page
+  Purpose: Display cart items, totals, and order submission
+  Tech Stack: HTML5 + CSS3 only (no JavaScript)
+  Sections: Header + cart items + total + restaurant selector + checkout
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,10 @@
 </head>
 <body>
 
+    <!-- Header: Navigation and branding -->
     <div class="header">
 
+    <!-- Left header: Back button, menu link, and logo -->
     <div class="header-left">
         <a href="desserts.html" class="back-btn" aria-label="Back to menu">
         <img src="imgs/Icons/back-btn.png" alt="Back">
@@ -23,6 +31,7 @@
         </a>
     </div>
 
+    <!-- Right header: Locations link and cart icon -->
     <div class="header-right">
 
         <a href="locations.html" class="locations" aria-label="go to locations">Locations</a>
@@ -36,6 +45,11 @@
 
     </div>
 
+    <!-- Cart Items: Product list with quantity and price -->
+    <!-- Each item: product link, name, price, image, quantity, item total -->
+    <!-- Item 1: Olimpo Burger -->
+    <!-- Fields: product name, price, image, quantity indicator -->
+    <!-- Action: link to product details page -->
     <div class="item-card">
         <a href="burger-nutrition.html" class="item-link" style="display:block; height:100%;">
             <p class="item-text">Olimpo</p>
@@ -46,6 +60,9 @@
         <p class="quantity">x1</p>
     </div>
 
+    <!-- Item 2: Onion Rings -->
+    <!-- Fields: product name, price, image, quantity indicator -->
+    <!-- Action: link to product details page -->
     <div class="item-card">
         <a href="sides-nutrition.html" class="item-link" style="display:block; height:100%;">
             <p class="item-text">Onion Rings</p>
@@ -56,6 +73,9 @@
         <p class="quantity">x1</p>
     </div>
 
+    <!-- Item 3: Pinky Shake -->
+    <!-- Fields: product name, price, image, quantity indicator -->
+    <!-- Action: link to product details page -->
     <div class="item-card">
         <a href="drinks-nutrition.html" class="item-link" style="display:block; height:100%;">
             <p class="item-text">Pinky Shake</p>
@@ -66,6 +86,9 @@
         <p class="quantity">x1</p>
     </div>
 
+    <!-- Item 4: Brownie -->
+    <!-- Fields: product name, price, image, quantity indicator -->
+    <!-- Action: link to product details page -->
     <div class="item-card">
         <a href="desserts-nutrition.html" class="item-link" style="display:block; height:100%;">
             <p class="item-text">Brownie</p>
@@ -76,8 +99,12 @@
         <p class="quantity">x1</p>
     </div>
 
+    <!-- Order Summary: Total price calculation -->
+    <!-- Displays sum of all items with quantities -->
     <h1 class="price">Total: 76,96€</h1>
 
+    <!-- Restaurant Selector: Choose delivery/pickup location -->
+    <!-- Dropdown with three location options (Ideapark, Valkea, Zeppelin) -->
     <div class="restaurant-wrapper">
         <label for="restaurant-select" class="restaurant-label">Choose a Restaurant:</label>
         <select id="restaurant-select">
@@ -88,6 +115,8 @@
         </select>
     </div>
 
+    <!-- Checkout Button: Submit order -->
+    <!-- Action: process order and proceed to confirmation -->
     <div class="confirm-order-wrapper">
         <button class="confirm-order-btn">Confirm order</button>
     </div>

@@ -1,3 +1,14 @@
+/*
+  BUURG - Drinks Nutrition Details Styles
+  Responsive styling for individual beverage product pages with FDA-style
+  nutrition facts. Mobile-first design scales content fluidly.
+  
+  Color Scheme: #FFB703 (Golden Brand), #111111 (Text), #FFFDFD (Cream)
+  Typography: Fluid sizing with clamp(), 400/700 font-weights
+  Spacing: Mobile-first 0.5rem - 1rem padding, 35rem card height
+  Layout: Full-height card with image, product details, nutrition info
+*/
+
 html{
     background-color:  #FFFDFD;
     height: 100%; 
@@ -23,6 +34,8 @@ body {
     box-sizing:border-box;
 }
 
+/* HEADER: 3.5rem golden bar with navigation buttons and logo */
+
 .header-left{
     display:flex;
     align-items:center;
@@ -30,6 +43,7 @@ body {
 }
 
 
+/* Back button: 44px square, flex centered, links to previous page */
 .back-btn{
     display:inline-flex;
     align-items:center;
@@ -46,6 +60,7 @@ body {
     padding-right:1rem; 
 }
 
+/* Menu link: Bold 700 weight, dark text, no underline */
 .menu{
     margin:0;
     font-weight:700;
@@ -53,6 +68,7 @@ body {
     color: #111111 ;
 }
 
+/* Logo: Centered absolutely with transform, 3.5rem width maintains aspect */
 .logo{ 
     position: absolute;
     left: 50%;
@@ -75,6 +91,7 @@ body {
     gap:0.5rem; 
 }
 
+/* Locations link: Bold weight, positioned right side of header */
 .locations{
     margin:1rem;
     font-weight:700;
@@ -82,6 +99,7 @@ body {
     color: #111111 ;
 }
 
+/* Cart button: 44px square icon button, inline-flex centered */
 .cart-btn{
     display:inline-flex;
     align-items:center;
@@ -96,6 +114,138 @@ body {
     width:34px;
     display:block;
     padding-left:1rem; 
+}
+
+
+/* PRODUCT CARD: Full-height 35rem golden card with image, details, nutrition */
+
+.drinks-card{
+    background-color: #FFB703 ;
+    /*
+      BUURG - Drinks Nutrition Details Styles
+      Responsive styling for individual beverage product pages with FDA-style
+      nutrition facts. Mobile-first design scales content fluidly.
+  
+      Color Scheme: #FFB703 (Golden Brand), #111111 (Text), #FFFDFD (Cream)
+      Typography: Fluid sizing with clamp(), 400/700 font-weights
+      Spacing: Mobile-first 0.5rem - 1rem padding, 35rem card height
+      Layout: Full-height card with image, product details, nutrition info
+    */
+    height: 35rem; 
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+/* Product image: 20% of card height, responsive, rounded corners */
+.drinks-img{
+    border-radius: 12px;
+    height: 20%;
+    position: absolute;
+}
+
+/* Product name: Positioned top-left, fluid size clamp(1.5rem, 3vw, 1.5rem) */
+/* White text shadow for contrast on golden background */
+.drinks-text {
+    position: absolute;
+    top: 0.5rem;
+    left: 12rem;
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+    color: #111111;
+    margin: 0;
+    z-index: 2;
+    /* HEADER: 3.5rem golden bar with navigation buttons and logo */
+
+    background: none;
+    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+    max-width: 10rem;      
+    text-align: right;     
+    white-space: normal;   
+    overflow-wrap: break-word; 
+}
+    /* Back button: 44px square, flex centered, links to previous page */
+
+/* Price: Positioned below name, fluid size clamp(1.5rem, 4vw, 2rem) */
+/* Bold styling with subtle white shadow for readability */
+.drinks-price{
+    position: absolute;
+    top: 4.3rem;      
+    left: 12rem;     
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #111111 ;
+    margin: 0;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+}
+
+/* Cart button: White background square, absolute positioned bottom-right */
+    /* Menu link: Bold 700 weight, dark text, no underline */
+.cart-btn2 {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    /* Logo: Centered absolutely with transform, 3.5rem width maintains aspect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    z-index: 2;
+    pointer-events: auto; 
+}
+
+.cart-btn2 img {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+/* Product link wrapper: Full-height transparent layer for click handling */
+.drinks-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    /* Locations link: Bold weight, positioned right side of header */
+    z-index: 1;
+}
+
+/* Nutrition description: Positioned at top: 8rem, text-based FDA info */
+/* Responsive font sizing, left-aligned, with white text shadow */
+.drinks-description {
+    position: absolute;
+    /* Cart button: 44px square icon button, inline-flex centered */
+    top: 8rem;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #111111;
+    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+    text-align: left;     
+    color: #111111;
+    font-size: 1rem;
+}
+
+/* FOOTER: Centered BUURG logo section with spacing */
+
+.buurg-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.buurg-logo-footer img {
+    width: 200px;
+    height: auto;
+}
 }
 
 

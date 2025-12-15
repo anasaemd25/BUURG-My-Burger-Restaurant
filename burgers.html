@@ -1,3 +1,9 @@
+<!--
+  BUURG - Burger Category Page
+  Purpose: Display burger menu items with details and add-to-cart options
+  Tech Stack: HTML5 + CSS3 only (no JavaScript)
+  Structure: Header navigation + product grid with burger cards
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,10 @@
 </head>
 <body>
 
+    <!-- Header: Navigation and branding -->
     <div class="header">
 
+    <!-- Left header: Back button, menu link, and logo -->
     <div class="header-left">
         <a href="index.html" class="back-btn" aria-label="Back to menu">
         <img src="imgs/Icons/back-btn.png" alt="Back">
@@ -23,6 +31,7 @@
         </a>
     </div>
 
+    <!-- Right header: Locations link and cart icon -->
     <div class="header-right">
 
         <a href="locations.html" class="locations" aria-label="go to locations">Locations</a>
@@ -37,11 +46,19 @@
     </div>
 
 
+    <!-- Product Grid: Burger cards with details and add-to-cart button -->
+    <!-- Each card contains: name, price, image, nutrition link, cart button -->
+    <!-- Burger Item: El Clasicooo -->
+    <!-- Fields: product name, price, image, nutrition details link -->
+    <!-- Action: add-to-cart button with cart icon -->
     <div class="burger-card">
         <a href="burger-nutrition.html" class="burger-link" style="display:block; height:100%;">
             <p class="burgers-text">El Clasicooo</p>
             <p class="burgers-price">24,99€</p>
             <img src="imgs/Burgers/clasic burguer.jpg" class="burger-img" alt="burger">
+    <!-- Burger Item: CheeZeBurger -->
+    <!-- Fields: product name, price, image, nutrition details link -->
+    <!-- Action: add-to-cart button with cart icon -->
         </a>
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="imgs/Icons/cart.png" alt="cart">
@@ -57,6 +74,9 @@
         <a href="cart.html" class="cart-btn2" aria-label="cart">
             <img src="imgs/Icons/cart.png" alt="cart">
         </a>
+    <!-- Burger Item: BakonFrito -->
+    <!-- Fields: product name, price, image, nutrition details link -->
+    <!-- Action: add-to-cart button with cart icon -->
     </div>
 
 
@@ -66,7 +86,10 @@
             <p class="burgers-price">32,99€</p>
             <img src="imgs/Burgers/bacon-burguer.jpg" class="burger-img" alt="burger">
         </a>
-        <div class="cart-btn2" aria-label="cart">
+    <!-- Burger Item: VeKe (Vegetarian) -->
+    <!-- Fields: product name, price, image, nutrition details link -->
+    <!-- Action: add-to-cart button with cart icon -->
+    <div class="cart-btn2" aria-label="cart">
             <img src="imgs/Icons/cart.png" alt="cart">
         </div>
     </div>
@@ -75,6 +98,9 @@
     <div class="burger-card">
         <a href="burger-nutrition.html" class="burger-link" style="display:block; height:100%;">
             <p class="burgers-text">VeKe</p>
+    <!-- Burger Item: Heart Attack -->
+    <!-- Fields: product name, price, image, nutrition details link -->
+    <!-- Action: add-to-cart button with cart icon -->
             <p class="burgers-price">27,99€</p>
             <img src="imgs/Burgers/vegie-burger.jpg" class="burger-img" alt="burger">
         </a>

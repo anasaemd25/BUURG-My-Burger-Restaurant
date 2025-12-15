@@ -1,3 +1,9 @@
+<!--
+  BUURG - Sides Nutrition Details Page
+  Purpose: Display detailed nutrition info for sides item
+  Tech Stack: HTML5 + CSS3 only (no JavaScript)
+  Sections: Header + product card with nutrition label + footer logo
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +16,10 @@
 </head>
 <body>
 
+    <!-- Header: Navigation and branding -->
     <div class="header">
 
+    <!-- Left header: Back button, menu link, and logo -->
     <div class="header-left">
         <a href="sides.html" class="back-btn" aria-label="Back to menu">
         <img src="imgs/Icons/back-btn.png"  alt="Back">
@@ -24,6 +32,7 @@
         </a>
     </div>
 
+    <!-- Right header: Locations link and cart icon -->
     <div class="header-right">
 
         <a href="locations.html" class="locations" aria-label="go to locations">Locations</a>
@@ -38,6 +47,10 @@
     </div>
 
 
+    <!-- Product Card: Side dish with full nutrition information -->
+    <!-- Contains: name, price, image, description, FDA-style nutrition label -->
+    <!-- Nutrition info: serving size, calories, macros, vitamins, minerals -->
+    <!-- Action: add-to-cart button with cart icon -->
     <div class="side-card">
         <a href="sides-nutrition.html" class="side-link" style="display:block; height:100%;">
             <p class="side-text">Fries</p>
@@ -72,6 +85,7 @@
         </a>
     </div>
     
+    <!-- Footer: Return to home link with logo -->
     <a href="index.html" class="buurg-logo-footer">
         <img src="imgs/Logos/buurg-logo.png" alt="">
     </a>

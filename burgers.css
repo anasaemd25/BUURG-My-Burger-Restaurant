@@ -1,118 +1,139 @@
-html{
-    background-color:  #FFFDFD;
-    height: 100%; 
+/*
+  BUURG - Burgers Category Page Styles
+  Mobile-first responsive design for product listing grid
+  Color Scheme: #FFB703 (card bg), #111111 (text), #FFFDFD (page bg)
+  Card Layout: Horizontal item cards with image left, text/price right
+  Typography: Bold headings (700), clamp() for fluid scaling
+  Spacing: 0.5rem gaps, 1rem padding, responsive margins
+  Image Placeholder: Fills card height, centered with border-radius
+*/
+
+html {
+    background-color: #FFFDFD;
+    height: 100%;
     margin: 0;
 }
 
+/* Full-height vertical layout container */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.header{
+/* HEADER SECTION: Sticky navigation bar */
+.header {
     position: relative;
-    background-color:#FFB703;
-    border-radius:12px;
-    height:3.5rem;
-    min-width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between; 
+    background-color: #FFB703;
+    border-radius: 12px;
+    height: 3.5rem;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 0.5rem;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.header-left{
-    display:flex;
-    align-items:center;
-    gap:0.5rem; 
+/* Left nav group: back button, menu label, logo */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-
-.back-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:44px;
-    height:44px;
-    border-radius:8px;
-    text-decoration:none;
-}
-
-.back-btn img{
-    width:44px;
-    display:block;
-    padding-right:1rem; 
-}
-
-.menu{
-    margin:0;
-    font-weight:700;
+/* Back button: navigation control */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
     text-decoration: none;
-    color: #111111 ;
 }
 
-.logo{ 
+.back-btn img {
+    width: 44px;
+    display: block;
+    padding-right: 1rem;
+}
+
+.menu {
+    margin: 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: #111111;
+}
+
+/* Logo: centered absolutely within header */
+.logo {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
-    pointer-events:auto; 
-    z-index: 1;        
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    z-index: 1;
 }
 
-.logo img{
-    display:block;
-    width:3.5rem; 
-    height:auto;
-    padding:0;      
+.logo img {
+    display: block;
+    width: 3.5rem;
+    height: auto;
+    padding: 0;
 }
 
-.header-right{
-    display:flex;
-    align-items:center;
-    gap:0.5rem; 
+/* Right nav group: locations link, cart icon */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.locations{
-    margin:1rem;
-    font-weight:700;
+.locations {
+    margin: 1rem;
+    font-weight: 700;
     text-decoration: none;
-    color: #111111 ;
+    color: #111111;
 }
 
-.cart-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:44px;
-    height:44px;
-    border-radius:8px;
-    text-decoration:none;
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-.cart-btn img{
-    width:34px;
-    display:block;
-    padding-left:1rem; 
+.cart-btn img {
+    width: 34px;
+    display: block;
+    padding-left: 1rem;
 }
 
-.burger-card{
-    background-color: #FFB703 ;
+/* PRODUCT CARD SECTION: Horizontal layout with image and text */
+/* Card: golden background container with relative positioning for overlays */
+.burger-card {
+    background-color: #FFB703;
     height: 8rem;
     border-radius: 12px;
     margin-top: 1rem;
     padding: 0.5rem;
     box-sizing: border-box;
-    position: relative; 
+    position: relative;
 }
 
-.burger-img{
+/* Product image: square placeholder on left side */
+/* Height fills card, width set by aspect ratio */
+.burger-img {
     border-radius: 12px;
     height: 100%;
 }
 
+/* Product name: positioned overlay text */
+/* Positioned absolutely right of image with max-width constraint */
 .burgers-text {
     position: absolute;
     top: 0.5rem;
@@ -123,31 +144,60 @@ body {
     margin: 0;
     z-index: 2;
     background: none;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
-    max-width: 10rem;      
-    text-align: right;     
-    white-space: normal;   
-    overflow-wrap: break-word; 
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+    max-width: 10rem;
+    text-align: right;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
-.burgers-price{
+/* Product price: positioned below name */
+/* Formatted as currency (€) with bold font weight */
+.burgers-price {
     position: absolute;
-    top: 4.3rem;      
-    left: 12rem;     
+    top: 4.3rem;
+    left: 12rem;
     font-weight: bolder;
     font-size: clamp(1.5rem, 4vw, 2rem);
-    color: #111111 ;
+    color: #111111;
     margin: 0;
     z-index: 2;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
 }
 
+/* Add-to-cart button: positioned bottom-right of card */
+/* White background for contrast, flex center for icon alignment */
 .cart-btn2 {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
     width: 44px;
     height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.cart-btn2 img {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+/* Card link wrapper: enables full card clickability */
+.burger-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+}
     border-radius: 8px;
     display: flex;
     align-items: center;

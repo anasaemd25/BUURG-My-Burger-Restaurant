@@ -1,3 +1,9 @@
+<!--
+  BUURG - Restaurant Locations Page
+  Purpose: Display available restaurant locations with images
+  Tech Stack: HTML5 + CSS3 only (no JavaScript)
+  Structure: Header + location cards grid + footer logo
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,10 @@
 </head>
 <body>
 
+    <!-- Header: Navigation and branding -->
     <div class="header">
 
+    <!-- Left header: Back button, menu link, and logo -->
     <div class="header-left">
         <a href="index.html" class="back-btn" aria-label="Back to menu">
         <img src="imgs/Icons/back-btn.png"  alt="Back">
@@ -23,6 +31,7 @@
         </a>
     </div>
 
+    <!-- Right header: Locations link and cart icon -->
     <div class="header-right">
 
         <a href="locations.html" class="locations" aria-label="go to locations">Locations</a>
@@ -36,22 +45,34 @@
 
     </div>
 
+    <!-- Page Title -->
     <h1 class="restaurants">Restaurants</h1>
 
+    <!-- Location Cards Grid: Three restaurant location options -->
+    <!-- Each card: restaurant image, name label, navigation link -->
     <div class="locations-container">
 
 
+            <!-- Location Card: Ideapark -->
+            <!-- Fields: restaurant image, location name -->
+            <!-- Action: link to location details/ordering -->
             <a href="#" class="location-card" aria-label="Ideapark">
                 <img src="imgs/Location/ideapark.webp" alt="Ideapark restaurant">
                 <p class="card-text">IDEAPARK</p>
             </a>
 
 
+            <!-- Location Card: Valkea -->
+            <!-- Fields: restaurant image, location name -->
+            <!-- Action: link to location details/ordering -->
             <a href="#" class="location-card" aria-label="Valkea">
                 <img src="imgs/Location/valkea.jpg" alt="Valkea restaurant">
                 <p class="card-text">VALKEA</p>
             </a>
 
+            <!-- Location Card: Zeppelin -->
+            <!-- Fields: restaurant image, location name -->
+            <!-- Action: link to location details/ordering -->
             <a href="#" class="location-card" aria-label="Zeppelin">
                 <img src="imgs/Location/zeppelin.jpg" alt="Valkea restaurant">
                 <p class="card-text">Zeppelin</p>
@@ -59,6 +80,7 @@
 
     </div>
 
+    <!-- Footer: Return to home link with logo -->
     <a href="index.html" class="buurg-logo-footer">
         <img src="imgs/Logos/buurg-logo.png" alt="logo">
     </a>

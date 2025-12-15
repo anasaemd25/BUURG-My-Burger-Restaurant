@@ -1,6 +1,16 @@
-html{
-    background-color:  #FFFDFD;
-    height: 100%; 
+/*
+  BUURG - Nutrition Details Page Styles (Burgers)
+  Mobile-first responsive design for product details and nutrition info
+  Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
+  Card Layout: Full-height card with product image, name, price, nutrition text
+  Typography: Bold product names (700), scaled body text for nutrition facts
+  Spacing: Responsive margins and padding, footer logo centered
+  Nutrition Info: Text-based FDA-style label integrated in card
+*/
+
+html {
+    background-color: #FFFDFD;
+    height: 100%;
     margin: 0;
 }
 
@@ -10,110 +20,114 @@ body {
     flex-direction: column;
 }
 
-.header{
+/* HEADER: Navigation and branding */
+.header {
     position: relative;
-    background-color:#FFB703;
-    border-radius:12px;
-    height:3.5rem;
-    min-width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between; 
+    background-color: #FFB703;
+    border-radius: 12px;
+    height: 3.5rem;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 0.5rem;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.header-left{
-    display:flex;
-    align-items:center;
-    gap:0.5rem; 
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-
-.back-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:44px;
-    height:44px;
-    border-radius:8px;
-    text-decoration:none;
-}
-
-.back-btn img{
-    width:44px;
-    display:block;
-    padding-right:1rem; 
-}
-
-.menu{
-    margin:0;
-    font-weight:700;
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
     text-decoration: none;
-    color: #111111 ;
 }
 
-.logo{ 
+.back-btn img {
+    width: 44px;
+    display: block;
+    padding-right: 1rem;
+}
+
+.menu {
+    margin: 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: #111111;
+}
+
+.logo {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
-    pointer-events:auto; 
-    z-index: 1;        
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    z-index: 1;
 }
 
-.logo img{
-    display:block;
-    width:3.5rem; 
-    height:auto;
-    padding:0;      
+.logo img {
+    display: block;
+    width: 3.5rem;
+    height: auto;
+    padding: 0;
 }
 
-.header-right{
-    display:flex;
-    align-items:center;
-    gap:0.5rem; 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.locations{
-    margin:1rem;
-    font-weight:700;
+.locations {
+    margin: 1rem;
+    font-weight: 700;
     text-decoration: none;
-    color: #111111 ;
+    color: #111111;
 }
 
-.cart-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:44px;
-    height:44px;
-    border-radius:8px;
-    text-decoration:none;
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-.cart-btn img{
-    width:34px;
-    display:block;
-    padding-left:1rem; 
+.cart-btn img {
+    width: 34px;
+    display: block;
+    padding-left: 1rem;
 }
 
-.burger-card{
-    background-color: #FFB703 ;
-    height: 35rem; 
+/* PRODUCT DETAILS CARD: Full nutrition information display */
+/* Tall card container for product image, name, price, and nutrition facts */
+.burger-card {
+    background-color: #FFB703;
+    height: 35rem;
     border-radius: 12px;
     margin-top: 1rem;
     padding: 0.5rem;
     box-sizing: border-box;
-    position: relative; 
+    position: relative;
 }
 
-.burger-img{
+/* Product image: positioned at top of card */
+.burger-img {
     border-radius: 12px;
     height: 20%;
     position: absolute;
 }
 
+/* Product name: positioned overlay */
 .burgers-text {
     position: absolute;
     top: 0.5rem;
@@ -124,25 +138,27 @@ body {
     margin: 0;
     z-index: 2;
     background: none;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
-    max-width: 10rem;      
-    text-align: right;     
-    white-space: normal;   
-    overflow-wrap: break-word; 
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+    max-width: 10rem;
+    text-align: right;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
-.burgers-price{
+/* Product price: formatted currency below name */
+.burgers-price {
     position: absolute;
-    top: 4.3rem;      
-    left: 12rem;     
+    top: 4.3rem;
+    left: 12rem;
     font-weight: bolder;
     font-size: clamp(1.5rem, 4vw, 2rem);
-    color: #111111 ;
+    color: #111111;
     margin: 0;
     z-index: 2;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
 }
 
+/* Add-to-cart button: positioned bottom-right */
 .cart-btn2 {
     position: absolute;
     right: 1rem;
@@ -155,14 +171,16 @@ body {
     justify-content: center;
     background-color: #FFFFFF;
     z-index: 2;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
+
 .cart-btn2 img {
     width: 34px;
     height: 34px;
     padding: 0;
 }
 
+/* Card link: makes full card clickable for product details */
 .burger-link {
     display: block;
     height: 100%;
@@ -173,18 +191,21 @@ body {
     z-index: 1;
 }
 
+/* NUTRITION SECTION: Text-based FDA-style nutrition facts */
+/* Contains product description and detailed nutrition information */
 .burger-description {
     position: absolute;
     top: 8rem;
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: #111111;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
-    text-align: left;     
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+    text-align: left;
     color: #111111;
     font-size: 1rem;
 }
 
+/* FOOTER: Logo return link */
 .buurg-logo-footer {
     display: flex;
     justify-content: center;

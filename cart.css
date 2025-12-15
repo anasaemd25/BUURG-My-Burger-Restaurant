@@ -1,7 +1,18 @@
+/*
+    BUURG - Cart Page Styles
+    Mobile-first styling for the shopping cart: item cards, quantity badges,
+    pricing section, restaurant selector, and confirm order button.
+  
+    Color Scheme: #FFB703 (CTA/Brand), #111111 (Text), #FFFDFD (Background),
+    #EF476F (Accent for quantities and hover state)
+    Typography: Fluid clamp() for prices, 700 for headings/labels
+    Layout: Horizontal item cards with image left, details overlay, actions right
+*/
+
 html{
-    background-color:  #FFFDFD;
-    height: 100%; 
-    margin: 0;
+        background-color:  #FFFDFD;
+        height: 100%; 
+        margin: 0;
 }
 
 body {
@@ -22,6 +33,8 @@ body {
     padding: 0 0.5rem;
     box-sizing:border-box;
 }
+
+/* HEADER: Brand bar with back/menu and cart icon, centered logo */
 
 .header-left{
     display:flex;
@@ -106,12 +119,14 @@ body {
     box-sizing: border-box;
     position: relative; 
 }
+/* ITEM CARD: Horizontal layout, image left, text overlay, actions right */
 
 .item-img{
     border-radius: 12px;
     height: 100%;
     width: 10rem;
 }
+/* Product image: fixed 10rem width to anchor layout */
 
 .item-text {
     position: absolute;
@@ -129,6 +144,7 @@ body {
     white-space: normal;   
     overflow-wrap: break-word; 
 }
+/* Name: fluid size via clamp(), max-width ensures wrap without overflow */
 
 .item-price{
     position: absolute;
@@ -141,6 +157,7 @@ body {
     z-index: 2;
     text-shadow: 0 2px 6px rgba(255,255,255,0.2);
 }
+/* Price: placed beneath name; clamp() keeps it readable on small screens */
 
 .cart-btn2 {
     position: absolute;
@@ -156,6 +173,7 @@ body {
     z-index: 2;
     pointer-events: auto;
 }
+/* Add-to-cart icon: tactile 44px square, right-aligned */
 
 .cart-btn2 img {
     width: 34px;
@@ -172,6 +190,7 @@ body {
     position: relative;
     z-index: 1;
 }
+/* Clickable layer: makes entire card a link without obscuring overlays */
 
 .quantity {
     position: absolute;
@@ -183,6 +202,7 @@ body {
     margin: 0;
     z-index: 2;
 }
+/* Quantity badge: accent color draws attention to item count */
 
 .price {
     font-size: clamp(2rem, 4vw, 2rem);
@@ -191,11 +211,13 @@ body {
     margin-top: 2rem;
     padding-right: 0.5rem;
 }
+/* CART TOTAL: Right-aligned, prominent size for clarity */
 
 .restaurant-wrapper {
     margin-top: 2rem;
     padding: 0 0.5rem;
 }
+/* SELECTOR: Container for restaurant/branch selection */
 
 .restaurant-label {
     font-size: 1.2rem;
@@ -204,6 +226,7 @@ body {
     display: block;
     margin-bottom: 0.5rem;
 }
+/* Label: semantic text above select, bold for emphasis */
 
 #restaurant-select {
     width: 100%;
@@ -213,12 +236,14 @@ body {
     border: 2px solid #FFB703;
     box-sizing: border-box;
 }
+/* Select: full-width with brand-colored border and rounded corners */
 
 .confirm-order-wrapper {
     display: flex;
     justify-content: center;
     margin: 3rem 0;
 }
+/* CTA AREA: Center the confirmation button for clear call-to-action */
 
 .confirm-order-btn {
     background-color: #FFB703;
@@ -236,4 +261,5 @@ body {
 .confirm-order-btn:hover {
     background-color: #EF476F;
 }
+/* Confirm button: brand color default; hover switches to accent */
 

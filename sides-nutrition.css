@@ -1,3 +1,14 @@
+/*
+  BUURG - Sides Nutrition Details Styles
+  Responsive styling for individual sides product pages with FDA-style
+  nutrition facts. Mobile-first design scales content fluidly.
+  
+  Color Scheme: #FFB703 (Golden Brand), #111111 (Text), #FFFDFD (Cream)
+  Typography: Fluid sizing with clamp(), 400/700 font-weights
+  Spacing: Mobile-first 0.5rem - 1rem padding, 35rem card height
+  Layout: Full-height card with image, product details, nutrition info
+*/
+
 html{
     background-color:  #FFFDFD;
     height: 100%; 
@@ -23,12 +34,15 @@ body {
     box-sizing:border-box;
 }
 
+/* HEADER: 3.5rem golden bar with navigation buttons and logo */
+
 .header-left{
     display:flex;
     align-items:center;
     gap:0.5rem; 
 }
 
+/* Back button: 44px square, flex centered, links to previous page */
 .back-btn{
     display:inline-flex;
     align-items:center;
@@ -45,6 +59,7 @@ body {
     padding-right:1rem; 
 }
 
+/* Menu link: Bold 700 weight, dark text, no underline */
 .menu{
     margin:0;
     font-weight:700;
@@ -52,6 +67,7 @@ body {
     color: #111111 ;
 }
 
+/* Logo: Centered absolutely with transform, 3.5rem width maintains aspect */
 .logo{ 
     position: absolute;
     left: 50%;
@@ -74,6 +90,7 @@ body {
     gap:0.5rem; 
 }
 
+/* Locations link: Bold weight, positioned right side of header */
 .locations{
     margin:1rem;
     font-weight:700;
@@ -81,6 +98,7 @@ body {
     color: #111111 ;
 }
 
+/* Cart button: 44px square icon button, inline-flex centered */
 .cart-btn{
     display:inline-flex;
     align-items:center;
@@ -97,6 +115,8 @@ body {
     padding-left:1rem; 
 }
 
+/* PRODUCT CARD: Full-height 35rem golden card with image, details, nutrition */
+
 .side-card{
     background-color: #FFB703 ;
     height: 35rem; 
@@ -107,12 +127,15 @@ body {
     position: relative; 
 }
 
+/* Product image: 20% of card height, responsive, rounded corners */
 .side-img{
     border-radius: 12px;
     height: 20%;
     position: absolute;
 }
 
+/* Product name: Positioned top-left, fluid size clamp(1.5rem, 3vw, 1.5rem) */
+/* White text shadow for contrast on golden background */
 .side-text {
     position: absolute;
     top: 0.5rem;
@@ -130,6 +153,8 @@ body {
     overflow-wrap: break-word; 
 }
 
+/* Price: Positioned below name, fluid size clamp(1.5rem, 4vw, 2rem) */
+/* Bold styling with subtle white shadow for readability */
 .side-price{
     position: absolute;
     top: 4.3rem;      
@@ -142,6 +167,7 @@ body {
     text-shadow: 0 2px 6px rgba(255,255,255,0.2);
 }
 
+/* Cart button: White background square, absolute positioned bottom-right */
 .cart-btn2 {
     position: absolute;
     right: 1rem;
@@ -156,12 +182,14 @@ body {
     z-index: 2;
     pointer-events: auto; 
 }
+
 .cart-btn2 img {
     width: 34px;
     height: 34px;
     padding: 0;
 }
 
+/* Product link wrapper: Full-height transparent layer for click handling */
 .side-link {
     display: block;
     height: 100%;
@@ -172,6 +200,8 @@ body {
     z-index: 1;
 }
 
+/* Nutrition description: Positioned at top: 8rem, text-based FDA info */
+/* Responsive font sizing, left-aligned, with white text shadow */
 .side-description {
     position: absolute;
     top: 8rem;
@@ -183,6 +213,8 @@ body {
     color: #111111;
     font-size: 1rem;
 }
+
+/* FOOTER: Centered BUURG logo section with spacing */
 
 .buurg-logo-footer {
     display: flex;
