@@ -2,7 +2,6 @@
     BUURG - Cart Page Styles
     Mobile-first styling for the shopping cart: item cards, quantity badges,
     pricing section, restaurant selector, and confirm order button.
-  
     Color Scheme: #FFB703 (CTA/Brand), #111111 (Text), #FFFDFD (Background),
     #EF476F (Accent for quantities and hover state)
     Typography: Fluid clamp() for prices, 700 for headings/labels

@@ -1,11 +1,11 @@
 /*
-  BUURG - Burgers Category Page Styles
-  Mobile-first responsive design for product listing grid
-  Color Scheme: #FFB703 (card bg), #111111 (text), #FFFDFD (page bg)
-  Card Layout: Horizontal item cards with image left, text/price right
-  Typography: Bold headings (700), clamp() for fluid scaling
-  Spacing: 0.5rem gaps, 1rem padding, responsive margins
-  Image Placeholder: Fills card height, centered with border-radius
+    BUURG - Burgers Category Page Styles
+    Mobile-first responsive design for product listing grid
+    Color Scheme: #FFB703 (card bg), #111111 (text), #FFFDFD (page bg)
+    Card Layout: Horizontal item cards with image left, text/price right
+    Typography: Bold headings (700), clamp() for fluid scaling
+    Spacing: 0.5rem gaps, 1rem padding, responsive margins
+    Image Placeholder: Fills card height, centered with border-radius
 */
 
 html {
@@ -197,7 +197,6 @@ body {
     color: inherit;
     position: relative;
     z-index: 1;
-}
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -206,6 +205,7 @@ body {
     z-index: 2;
     pointer-events: auto; 
 }
+
 .cart-btn2 img {
     width: 34px;
     height: 34px;

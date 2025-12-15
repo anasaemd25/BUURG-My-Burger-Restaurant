@@ -1,11 +1,11 @@
 /*
-  BUURG - Drinks Category Page Styles
-  Mobile-first responsive layout for beverage products
-  Inherits pattern from burgers/sides with drink-specific styling
-  Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
-  Card Design: Horizontal layout with image, name, price, cart action
-  Typography: Bold headings (font-weight: 700), fluid text scaling
-  Contrast & Accessibility: Dark text on golden, white text shadows
+    BUURG - Drinks Category Page Styles
+    Mobile-first responsive layout for beverage products
+    Inherits pattern from burgers/sides with drink-specific styling
+    Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
+    Card Design: Horizontal layout with image, name, price, cart action
+    Typography: Bold headings (font-weight: 700), fluid text scaling
+    Contrast & Accessibility: Dark text on golden, white text shadows
 */
 
 html {

@@ -1,11 +1,11 @@
 /*
-  BUURG - Sides Category Page Styles
-  Mobile-first responsive design for product listing
-  Same layout pattern as burgers with alternative product styling
-  Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
-  Card Structure: Horizontal layout with image thumbnail and product info
-  Typography: 700 bold for prices/names, fluid scaling with clamp()
-  Spacing: Consistent 0.5rem-1rem scale, responsive margin handling
+    BUURG - Sides Category Page Styles
+    Mobile-first responsive design for product listing
+    Same layout pattern as burgers with alternative product styling
+    Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
+    Card Structure: Horizontal layout with image thumbnail and product info
+    Typography: 700 bold for prices/names, fluid scaling with clamp()
+    Spacing: Consistent 0.5rem-1rem scale, responsive margin handling
 */
 
 html {

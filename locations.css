@@ -1,16 +1,16 @@
-html{
-    background-color:  #FFFDFD;
 /*
     BUURG - Locations Page Styles
     Responsive location card layout with image overlays and text.
     Uses flexbox for flexible arrangement, clamp() for responsive text sizing.
-  
     Color Scheme: #FFB703 (Brand Golden), #111111 (Text), #FFFDFD (Background)
     Typography: Fluid sizing clamp(1.6rem, 4vw, 2.5rem), 700 font-weight
     Spacing: 2rem gap between cards, centered flex layout
     Cards: 40-45% width, responsive image overlays with semi-transparent labels
     Media Query: @media (max-width: 900px) - Single column layout on small screens
 */
+
+html{
+    background-color:  #FFFDFD;
 }
 
 .header{
@@ -49,23 +49,24 @@ html{
     padding-right:1rem; 
 }
 
+/* Menu link: Bold 700 weight, dark text, no underline */
 .menu{
     margin:0;
     font-weight:700;
-/* HEADER: 3.5rem golden bar with navigation buttons and logo */
     text-decoration: none;
     color: #111111 ;
 }
 
+/* Logo: Centered absolutely with transform, 3.5rem width, auto-pointer */
 .logo{ 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-/* Back button: 44px square, flex centered, links to previous page */
     top: 50%;
     transform: translate(-50%, -50%); 
     pointer-events:auto; 
-    z-index: 1;        }
+    z-index: 1;        
+}
 
 .logo img{
     display:block;
@@ -74,19 +75,19 @@ html{
     padding:0;      
 }
 
+/* Right header section: Locations link and cart icon */
 .header-right{
     display:flex;
     align-items:center;
     gap:0.5rem; 
-/* Menu link: Bold 700 weight, dark text, no underline */
 }
 
+/* Locations link: Bold 700 weight, dark text, no underline */
 .locations{
     margin:1rem;
     font-weight:700;
     text-decoration: none;
     color: #111111 ;
-/* Logo: Centered absolutely with transform, 3.5rem width maintains aspect */
 }
 
 .cart-btn{
@@ -105,19 +106,19 @@ html{
     padding-left:1rem; 
 }
 
+/* Page heading: Large title for Restaurants section */
 .restaurants{
     font-size:2rem;
     font-weight:700;
     text-align:center;
-/* Locations link: Bold weight, positioned right side of header */
     margin-top:2rem;
     color:#111111;
 }
 
+/* Location card: 40% width container with relative positioning */
 .locations-card{
     position: relative;    
     width: 40%;
-/* Cart button: 44px square icon button, inline-flex centered */
     display: inline-block;
     overflow: hidden;
     border-radius: 12px;
@@ -130,11 +131,11 @@ html{
     border-radius: 12px;
 }
 
+/* Text overlay: Golden color, semi-transparent dark background, positioned at bottom */
 .locations-text{
     color: #FFB703;
     position: absolute;
     left: 0.5rem;
-/* LOCATION CARDS: Responsive container with centered location cards */
     right: 0.5rem;
     bottom: 2rem;
     font-weight: 700;
@@ -187,6 +188,7 @@ html{
     color:#111111;
 }
 
+/* Locations container: Flexbox layout for location cards */
 .locations-container {
     display: flex;
     flex-direction: column;      
@@ -195,8 +197,8 @@ html{
     padding: 0 1rem;
     margin-bottom: 4rem;
 }
-/* Secondary text overlay: Same styling as .locations-text */
 
+/* Location card: Individual restaurant card with image and text overlay */
 .location-card {
     position: relative;
     width: 420px;             
@@ -205,12 +207,15 @@ html{
     overflow: hidden;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 16px 32px rgba(0,0,0,0.15);
-    }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+
+/* Location card image: Full width responsive image */
 .location-card img {
     width: 100%;
     height: auto;
@@ -218,6 +223,7 @@ html{
     border-radius: 16px;
 }
 
+/* Card text overlay: Golden text with semi-transparent dark background */
 .card-text {
     position: absolute;
     left: 0.5rem;
@@ -233,6 +239,7 @@ html{
     backdrop-filter: blur(2px);
 }
 
+/* Media query: Mobile responsive layout for small screens */
 @media (max-width: 900px) {
     .locations-container {
         flex-direction: column;
@@ -244,6 +251,7 @@ html{
     }
 }
 
+/* Footer logo: Centered BUURG logo at bottom of page */
 .buurg-logo-footer {
     display: flex;
     justify-content: center;

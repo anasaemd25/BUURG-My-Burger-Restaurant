@@ -1,12 +1,11 @@
 /*
-  BUURG - Sides Nutrition Details Styles
-  Responsive styling for individual sides product pages with FDA-style
-  nutrition facts. Mobile-first design scales content fluidly.
-  
-  Color Scheme: #FFB703 (Golden Brand), #111111 (Text), #FFFDFD (Cream)
-  Typography: Fluid sizing with clamp(), 400/700 font-weights
-  Spacing: Mobile-first 0.5rem - 1rem padding, 35rem card height
-  Layout: Full-height card with image, product details, nutrition info
+    BUURG - Sides Nutrition Details Styles
+    Responsive styling for individual sides product pages with FDA-style
+    nutrition facts. Mobile-first design scales content fluidly.
+    Color Scheme: #FFB703 (Golden Brand), #111111 (Text), #FFFDFD (Cream)
+    Typography: Fluid sizing with clamp(), 400/700 font-weights
+    Spacing: Mobile-first 0.5rem - 1rem padding, 35rem card height
+    Layout: Full-height card with image, product details, nutrition info
 */
 
 html{

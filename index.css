@@ -1,10 +1,10 @@
 /*
-  BUURG - Index Page Styles
-  Mobile-first responsive design using flexbox and relative positioning
-  Color Scheme: #FFB703 (golden brand), #111111 (dark text), #FFFDFD (cream bg)
-  Font Weight: 400 (normal), 700 (bold labels)
-  Typography: clamp() for fluid scaling across viewport sizes
-  Spacing Scale: 0.5rem, 1rem, 1.4rem units
+    BUURG - Index Page Styles
+    Mobile-first responsive design using flexbox and relative positioning
+    Color Scheme: #FFB703 (golden brand), #111111 (dark text), #FFFDFD (cream bg)
+    Font Weight: 400 (normal), 700 (bold labels)
+    Typography: clamp() for fluid scaling across viewport sizes
+    Spacing Scale: 0.5rem, 1rem, 1.4rem units
 */
 
 html {

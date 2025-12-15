@@ -1,11 +1,11 @@
 /*
-  BUURG - Nutrition Details Page Styles (Burgers)
-  Mobile-first responsive design for product details and nutrition info
-  Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
-  Card Layout: Full-height card with product image, name, price, nutrition text
-  Typography: Bold product names (700), scaled body text for nutrition facts
-  Spacing: Responsive margins and padding, footer logo centered
-  Nutrition Info: Text-based FDA-style label integrated in card
+    BUURG - Nutrition Details Page Styles (Burgers)
+    Mobile-first responsive design for product details and nutrition info
+    Color Scheme: #FFB703 (cards), #111111 (text), #FFFDFD (background)
+    Card Layout: Full-height card with product image, name, price, nutrition text
+    Typography: Bold product names (700), scaled body text for nutrition facts
+    Spacing: Responsive margins and padding, footer logo centered
+    Nutrition Info: Text-based FDA-style label integrated in card
 */
 
 html {
