@@ -130,8 +130,6 @@ body {
 .burger-img {
     border-radius: 12px;
     height: 100%;
-    width: 12rem; /* ensure image occupies left column, not full card */
-    object-fit: cover; /* keep aspect while filling the thumbnail area */
 }
 
 /* Product name: positioned overlay text */
@@ -190,30 +188,13 @@ body {
     padding: 0;
 }
 
-/* Card link wrapper: enables full card clickability */
-.burger-link {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    z-index: 1;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    z-index: 2;
-    pointer-events: auto; 
-}
-
 .cart-btn2 img {
     width: 34px;
     height: 34px;
     padding: 0;
 }
 
+/* Card link wrapper: enables full card clickability */
 .burger-link {
     display: block;
     height: 100%;
